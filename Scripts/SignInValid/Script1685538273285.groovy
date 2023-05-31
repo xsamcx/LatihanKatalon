@@ -21,24 +21,22 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://magento.softwaretestingboard.com/')
 
-WebUI.click(findTestObject('Object Repository/Page_Home Page/a_Create an Account'))
+WebUI.click(findTestObject('Object Repository/Page_Home Page/a_Sign In'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Create New Customer Account/input_First Name_firstname'), 'Sam')
+WebUI.setText(findTestObject('Object Repository/Page_Customer Login/input_Email_loginusername'), 'roni_cost@example.com')
 
-WebUI.setText(findTestObject('Object Repository/Page_Create New Customer Account/input_Last Name_lastname'), 'Sam')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Customer Login/input_Password_loginpassword'), 'C5AHXkW0b5qPvzP9ADqdDdqcjNuzfIiq')
 
-WebUI.setText(findTestObject('Object Repository/Page_Create New Customer Account/input_Email_email'), 'sam@gmail.com')
+WebUI.click(findTestObject('Object Repository/Page_Customer Login/span_Sign In'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Create New Customer Account/input_Password_password'), 'p4y+y39Ir5MmxXEoT6JZcA==')
+WebUI.setText(findTestObject('Object Repository/Page_Customer Login/input_Email_loginusername'), 'roni_cost@example.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Create New Customer Account/input_Confirm Password_password_confirmation'), 
-    'p4y+y39Ir5MmxXEoT6JZcA==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Customer Login/input_Password_loginpassword'), 'C5AHXkW0b5qPvzP9ADqdDdqcjNuzfIiq')
 
-WebUI.click(findTestObject('Object Repository/Page_Create New Customer Account/button_Create an Account'))
+WebUI.setText(findTestObject('Object Repository/Page_Customer Login/input_Please type the letters and numbers b_5877e6'), 
+    'X28D')
 
-WebUI.click(findTestObject('Object Repository/Page_My Account/div_Thank you for registering with Main Web_e69dd7'))
-
-WebUI.click(findTestObject('Object Repository/Page_My Account/div_Thank you for registering with Main Web_e69dd7_1'))
+WebUI.click(findTestObject('Object Repository/Page_Customer Login/button_Sign In'))
 
 WebUI.closeBrowser()
 
